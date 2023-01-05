@@ -1,0 +1,73 @@
+/**
+ * Base styles
+ *
+ * A Base rule is applied to an element using an element selector,
+ * a descendent selector, or a child selector, along with any
+ * pseudo-classes. It doesn’t include any class or ID selectors.
+ * It is defining the default styling for how that element should look
+ * in all occurrences on the page.
+ *
+ * This Base styles also starts with a modern css reset to normalize
+ * the default state across browsers.
+ */
+@import "./_reset.scss";
+
+// Typography
+body {
+   font-family: 'Roboto',sans-serif;
+}
+p {
+   margin-bottom: 1em;
+}
+
+// See https://css-tricks.com/overriding-default-button-styles/
+// Default button is style filled
+/*
+button {
+   position: relative;
+   border: none;
+   border-radius: 20px;
+   box-shadow: none;
+   padding: 0 24px;
+   height: 40px;
+   margin: 0;
+   text-decoration: none;
+   background-color: var(--md-sys-color-primary);
+   color: var(--md-sys-color-on-primary);
+   font-family: var(--md-sys-typescale-label-large-font-family-name), sans-serif;
+   font-size: var(--md-sys-typescale-label-large-font-size);
+   line-height: var(--md-sys-typescale-label-large-line-height);
+   cursor: pointer;
+   text-align: center;
+   transition: background 250ms ease-in-out, 
+               transform 150ms ease;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+   .state-layer {
+      background: var(--md-sys-color-on-primary);
+      border-radius: 20px;
+      display: block;
+      height: 100%;
+      opacity: var(--md-sys-state-hover-state-layer-opacity);
+      position: absolute;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      width: 100%;
+   }
+}
+
+button:focus {
+   outline: 1px solid #fff;
+   outline-offset: -4px;
+}
+
+button:active {
+   transform: scale(0.99);
+}
+*/
